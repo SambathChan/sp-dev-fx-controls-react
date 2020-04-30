@@ -46,9 +46,9 @@ export class FilePicker extends React.Component<IFilePickerProps, IFilePickerSta
 
     this.state = {
       panelOpen: false,
-      selectedTab: 'keyRecent',
+      selectedTab: props.selectedTab ? props.selectedTab : 'keyRecent',
       organisationAssetsEnabled: false,
-      showFullNav: true
+      showFullNav: true,
     };
   }
 
